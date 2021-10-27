@@ -15,6 +15,14 @@ Vite Vant Template 是一个免费开源的移动端模版。使用了最新的`
 - [github](https://github.com/mvpyb/vite-vant-template) - 完整版github站点
 - [码云](https://gitee.com/simmon_page/vite-vant-template) - 完整版码云站点
 
+Vite Element Admin 模板
+
+- [没有梯子的可移步码云](http://simmon_page.gitee.io/vite-element-plus-admin/) - 完整版预览 （ gitee ）
+- [vite-element-admin](https://mvpyb.github.io/vite-element-plus-admin/dist/) - 完整版预览 ( github )
+- [github](https://github.com/mvpyb/vite-element-plus-admin) - 完整版github站点
+- [码云](https://gitee.com/simmon_page/vite-element-plus-admin) - 完整版码云站点
+
+
 测试账号: 随便填
 测试密码: 随便填
 
