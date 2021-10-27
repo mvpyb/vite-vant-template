@@ -1,0 +1,22 @@
+
+.h50 {
+  height: 50px;
+  line-height: 50px;
+}
+
+.no-border {
+  border:none;
+}
+
+.custom-toast {
+  .van-toast__icon {
+    font-size :30px;
+  }
+  .yu-icon-shanchu {
+    color : var( --yu-red-color );
+  }
+  .yu-icon-chenggong {
+    color : var( --yu-green-color );
+  }
+}
+

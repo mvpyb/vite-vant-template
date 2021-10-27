@@ -1,0 +1,113 @@
+
+:root {
+  --yu-linear-bg-color: linear-gradient(to right, #36D7B7, #3498DB);
+  --yu-linear-bg-color-light: linear-gradient(to right, rgba(54,215,183,0.5), rgba(52,152,219,0.5));
+  --yu-yellow-color: #f5c156;
+  --yu-yellow-color--light: #f5ca69;
+  --yu-yellow-color--dark: #f5b50f;
+  --yu-yellow-color--disabled: #f5e590;
+  --yu-yellow-color--high: #f4d917;
+  
+  --yu-white-color: #fff;
+  --yu-black-color: #000;
+  --yu-dark-color: #343434;
+  --yu-red-color: #F5222D;
+  --yu-danger-color: #f84610;
+  --yu-green-color: #44B035;
+  --yu-gray-color: #c0c4cc; /*用于表单 密码框 -- 显示/隐藏图标*/
+  --yu-gray-color--light: #eee;
+  
+  --yu-font-color--dark: #242D3D;
+  
+  --yu-color-primary: #2469f6;
+  --yu-color-primary2: #3977f6;
+  --yu-color-primary3: #4f87f7;
+  --yu-color-primary4: #6595f8;
+  --yu-color-primary5: #7ba5f9;
+  --yu-color-primary6: #91b3fa;
+  --yu-color-primary7: #a7c3fb;
+  --yu-color-primary8: #bcd1fc;
+  --yu-color-primary9: #d3e1fd;
+  --yu-color-primary10: #e8f0fe;
+  --yu-color-primary20: #0545c8;
+  
+  --yu-color-success: #3ac15f;
+  --yu-color-success2: #4dc76e;
+  --yu-color-success3: #61cd7f;
+  --yu-color-success4: #74d38e;
+  --yu-color-success5: #88da9f;
+  --yu-color-success6: #9ce0ae;
+  --yu-color-success7: #b0e6bf;
+  --yu-color-success8: #c3ecce;
+  --yu-color-success9: #d7f3df;
+  --yu-color-success10: #ebf9ef;
+  
+  --yu-color-info: #5087f8;
+  --yu-color-info2: #739ff9;
+  --yu-color-info3: #a7c3fb;
+  --yu-color-info4: #cadbfd;
+  --yu-color-info5: #edf3fe;
+  
+  --yu-color-error: #e02433;
+  --yu-color-error2: #e33947;
+  --yu-color-error3: #e64f5b;
+  --yu-color-error4: #e9656f;
+  --yu-color-error5: #ec7b84;
+  --yu-color-error6: #ef9198;
+  --yu-color-error7: #f3a7ad;
+  --yu-color-error8: #f6bcc1;
+  --yu-color-error9: #f9d3d6;
+  --yu-color-error10: #fce8ea;
+  
+  --yu-color-warn: #ffc300;
+  --yu-color-warn2: #ffc819;
+  --yu-yu-color-warn3: #ffcf33;
+  --yu-color-warn4: #ffd54c;
+  --yu-color-warn5: #ffdb66;
+  --yu-color-warn6: #ffe17f;
+  --yu-color-warn7: #ffe799;
+  --yu-color-warn8: #ffedb2;
+  --yu-color-warn9: #fff3cc;
+  --yu-color-warn10: #fff9e5;
+  
+  --yu-color-disabled: #c5c6cb;
+  --yu-color-disabled2: #d0d1d5;
+  --yu-color-disabled3: #dcdde0;
+  --yu-color-disabled4: #e8e8ea;
+  --yu-color-disabled5: #f4f4f5;
+  
+  --yu-color-orange: #f66524;
+  --yu-color-orange2: #f67439;
+  --yu-color-orange3: #f7834f;
+  --yu-color-orange4: #f89365;
+  --yu-color-orange5: #f9a27b;
+  --yu-color-orange6: #fab191;
+  --yu-color-orange7: #fbc1a7;
+  --yu-color-orange8: #fcd0bc;
+  --yu-color-orange9: #fde0d3;
+  --yu-color-orange10: #feefe8;
+  
+  --yu-border-color-blockquote: #dbdbdb;
+  --yu-shadow-color: #c5c9d5;
+  --yu-shadow-color2: #f1f3f4;
+  --yu-color-text-primary: #0b0b37;
+  --yu-color-text-regular: #4f5a70;
+  --yu-color-text-secondary: #8590a6;
+  --yu-color-text-placeholder: #c5c6cb;
+  --yu-color-box-placeholder: #f1f3f4;
+  --yu-color-text-blockquote: #6a737d;
+  --yu-background-color: #f5f7f8;
+  --yu-background-color-text: #f9fafb;
+  --yu-background-color-text2: #eff1f3;
+  --yu-mask-background-color: rgba(0,0,0,0.5);
+  
+  /*阴影*/
+  --yu-border-shadow--light: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+$white:#fff;
+
+
+:export {
+  //white: $white;
+}
