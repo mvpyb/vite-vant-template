@@ -1,6 +1,5 @@
 <template>
   <div class="section msg-section">
-  
     <!--系统面板-->
     <yu-card class="user-info-card">
       <template #body>
@@ -120,16 +119,19 @@
 </script>
 
 <style lang="scss" scoped>
+  .msg-section {
+    /*padding-top: 20px;*/
+  }
   .user-info-card {
+    padding: 0;
     display: block;
     width: 100%;
-    padding: 0;
     margin-bottom: 8px;
   }
   
   .user-info-list {
     height: 40px;
-    padding: 10px;
+    padding: 10px 10px;
     box-sizing: content-box;
     .icon-item {
       width: 40px;
