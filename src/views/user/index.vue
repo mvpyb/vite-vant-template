@@ -172,106 +172,106 @@ const store = useStore()
   .user-section {
     background: var( --yu-gray-color--light );
     min-height: 100vh;
-  }
   
-  .head {
-    height: 170px;
-    position: relative;
-    .nav-bar {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: transparent;
-      border: none;
-      .van-icon {
-        color: var( --yu-white-color );
-      }
-      .title {
-        color: var( --yu-white-color );
-      }
-      &:after {
-        border:none;
-      }
-    }
-    .head-bg {
-      height: 150px;
-      background: var( --yu-linear-bg-color );
+    .head {
+      height: 170px;
       position: relative;
-      overflow: hidden;
-      width: 100%;
-      img {
-        display: inline-block;
+      .nav-bar {
         position: absolute;
-        width: 80px;
-        height: auto;
-        opacity: 0.2;
-        &.img1 {
-          top: 0;
-          right: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        border: none;
+        .van-icon {
+          color: var( --yu-white-color );
         }
-        &.img2 {
-          bottom: 0;
-          left: 0;
+        .title {
+          color: var( --yu-white-color );
+        }
+        &:after {
+          border:none;
         }
       }
-    }
-  }
-  
-  .user-info {
-    position: absolute;
-    top: 66px;
-    left: 13px;
-    width: calc(100% - 26px);
-    z-index: 9;
-    .card-head-wrapper {
-    
-    }
-    .card-body-wrapper {
-      .avatar {
-        width: 60px;
-        height: 60px;
+      .head-bg {
+        height: 150px;
+        background: var( --yu-linear-bg-color );
+        position: relative;
         overflow: hidden;
-        border-radius: 50%;
-        margin-right: 16px;
-        box-shadow: var( --yu-border-shadow--light );
+        width: 100%;
         img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-      .info {
-        color: rgba(36, 45, 61, 1);
-        font-size: 12px;
-        line-height: 18px;
-        padding-top: 10px;
-        text-align: left;
-        width: calc( 100% - 60px - 16px );
-        .user-name {
-          margin-bottom: 4px;
-          font-weight:600;
-        }
-        .phone {
-        
+          display: inline-block;
+          position: absolute;
+          width: 80px;
+          height: auto;
+          opacity: 0.2;
+          &.img1 {
+            top: 0;
+            right: 0;
+          }
+          &.img2 {
+            bottom: 0;
+            left: 0;
+          }
         }
       }
     }
-    .card-foot-wrapper {
+  
+    .user-info {
+      position: absolute;
+      top: 66px;
+      left: 13px;
+      width: calc(100% - 26px);
+      z-index: 9;
+      .card-head-wrapper {
+      
+      }
+      .card-body-wrapper {
+        .avatar {
+          width: 60px;
+          height: 60px;
+          overflow: hidden;
+          border-radius: 50%;
+          margin-right: 16px;
+          box-shadow: var( --yu-border-shadow--light );
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .info {
+          color: rgba(36, 45, 61, 1);
+          font-size: 12px;
+          line-height: 18px;
+          padding-top: 10px;
+          text-align: left;
+          width: calc( 100% - 60px - 16px );
+          .user-name {
+            margin-bottom: 4px;
+            font-weight:600;
+          }
+          .phone {
+          
+          }
+        }
+      }
+      .card-foot-wrapper {
+      
+      }
+    }
+  
+    .body {
+      padding: 0 13px;
+      margin-top: 10px;
+    }
+    .user-info-card {
+      display: block;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 8px;
+    }
+    .user-info-list {
     
     }
-  }
-  
-  .body {
-    padding: 0 13px;
-    margin-top: 10px;
-  }
-  .user-info-card {
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin-bottom: 8px;
-  }
-  .user-info-list {
-  
   }
 </style>
