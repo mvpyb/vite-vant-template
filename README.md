@@ -7,15 +7,13 @@ Vite Vant Template 是一个免费开源的移动端模版。使用了最新的`
 
 - **最新技术栈**：使用 Vue3/vite2 等前端前沿技术开发
 - **Mock 数据** 内置 Mock 数据方案
-- **权限** 内置完善的动态路由权限生成方案
-- **组件** 二次封装了多个常用的组件
 
 ## 预览
 
-- [没有梯子的可移步码云](http://simmon_page.gitee.io/vite-element-plus-admin/) - 完整版预览 （ gitee ）
-- [vite-element-admin](https://mvpyb.github.io/vite-element-plus-admin/dist/) - 完整版预览 ( github )
-- [github](https://github.com/mvpyb/vite-element-plus-admin) - 完整版github站点
-- [码云](https://gitee.com/simmon_page/vite-element-plus-admin) - 完整版码云站点
+- [没有梯子的可移步码云]( https://simmon_page.gitee.io/vite-vant-template/dist/ ) - 完整版预览 （ gitee ）
+- [vite-element-admin](https://mvpyb.github.io/vite-vant-template/dist/) - 完整版预览 ( github )
+- [github](https://github.com/mvpyb/vite-vant-template) - 完整版github站点
+- [码云](https://gitee.com/simmon_page/vite-vant-template) - 完整版码云站点
 
 测试账号: 随便填
 测试密码: 随便填
@@ -33,7 +31,7 @@ Vite Vant Template 是一个免费开源的移动端模版。使用了最新的`
 - [Vite](https://cn.vitejs.dev/) - vite 特性
 - [Vue3](https://v3.cn.vuejs.org/) - Vue3 基础语法
 - [Vue-Router-Next](https://next.router.vuejs.org/zh/index.html) - vue-router 4.x 文档
-- [Element-Plus-Vue](https://element-plus.gitee.io/#/zh-CN/component/installation) - Element UI组件
+- [Vant](https://vant-contrib.gitee.io/vant/v3/#/zh-CN) - Vant UI组件
 - [Mock.js](https://github.com/nuysoft/Mock) - mockjs 基本语法
 
 ## 目录结构
@@ -69,10 +67,10 @@ Vite Vant Template 是一个免费开源的移动端模版。使用了最新的`
 
 ```bash
 # 克隆项目
-git clone https://github.com/mvpyb/vite-element-plus-admin.git
+git clone https://github.com/mvpyb/vite-vant-template.git
 
 # 进入项目目录
-cd vite-element-plus-admin
+cd vite-vant-template
 
 # 安装依赖
 npm install
