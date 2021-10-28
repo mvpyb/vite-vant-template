@@ -15,7 +15,7 @@ Vite Vant Template 是一个免费开源的移动端模版。使用了最新的`
 - [github](https://github.com/mvpyb/vite-vant-template) - 完整版github站点
 - [码云](https://gitee.com/simmon_page/vite-vant-template) - 完整版码云站点
 
-Vite Element Admin 模板
+## Vite Element Admin （vite + element plus 中后台模板）
 
 - [没有梯子的可移步码云](http://simmon_page.gitee.io/vite-element-plus-admin/) - 完整版预览 （ gitee ）
 - [vite-element-admin](https://mvpyb.github.io/vite-element-plus-admin/dist/) - 完整版预览 ( github )
@@ -26,12 +26,14 @@ Vite Element Admin 模板
 测试账号: 随便填
 测试密码: 随便填
 
+## 效果预览
+
 <p align="center">
-   <img alt="PureAdmin Logo" width="100%" src="http://pic.yupoo.com/454539387/af2c64af/33b7534d.jpg">
-   <img alt="PureAdmin Logo" width="100%" src="http://pic.yupoo.com/454539387/06f5972c/48312dd2.jpg">
-   <img alt="PureAdmin Logo" width="100%" src="http://pic.yupoo.com/454539387/c4efc97a/e639a7c0.jpg">
-   <img alt="PureAdmin Logo" width="100%" src="http://pic.yupoo.com/454539387/3fac1ed4/0fafebae.jpg">
-   <img alt="PureAdmin Logo" width="100%" src="http://pic.yupoo.com/454539387/10717196/39991768.jpg">
+   <img alt="PureAdmin Logo" width="18%" src="http://pic.yupoo.com/454539387/af2c64af/33b7534d.jpg">
+   <img alt="PureAdmin Logo" width="18%" src="http://pic.yupoo.com/454539387/06f5972c/48312dd2.jpg">
+   <img alt="PureAdmin Logo" width="18%" src="http://pic.yupoo.com/454539387/c4efc97a/e639a7c0.jpg">
+   <img alt="PureAdmin Logo" width="18%" src="http://pic.yupoo.com/454539387/3fac1ed4/0fafebae.jpg">
+   <img alt="PureAdmin Logo" width="18%" src="http://pic.yupoo.com/454539387/10717196/39991768.jpg">
 </p>
 
 ## 准备
