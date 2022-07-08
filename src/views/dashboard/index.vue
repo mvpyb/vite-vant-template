@@ -111,7 +111,7 @@
               <div class="title">
                 <div class="list-icon">#</div>
                 <h3>万万没想到</h3>
-                <svg-icon icon-class="hot" class-name="hot-icon" ></svg-icon>
+                <svg-icon icon-class="hot" class-name="hot-icon" />
               </div>
               <div class="sub-title">
                 相机还可以这样玩! ?
