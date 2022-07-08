@@ -3,11 +3,6 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Layout from "/@/layout/index.vue"
 import MsgLayout from "/@/layout/msg.vue"
 import NormalLayout from "/@/layout/normalLayout.vue"
-// import { defineComponent, h, createVNode } from "vue";
-// const RouteView = {
-//   name: 'RouteView',
-//   render: () => h('router-view')
-// }
 
 export const constantRoutes = [
 
@@ -137,12 +132,6 @@ export const asyncRoutes = [
     ],
   },
   
-  
-  // {
-  //   path: "/",
-  //   redirect: "/user",
-  // },
-  
   {
     path: '/user',
     component: () => import('/@/views/user/index.vue'),
@@ -154,7 +143,6 @@ export const asyncRoutes = [
       roles : ['admin', 'user'],
     },
   },
-  
   
   { path : '/:pathMatch(.*)', redirect : '/404', hidden : true }
 ]
