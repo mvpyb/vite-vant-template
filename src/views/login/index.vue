@@ -59,8 +59,6 @@ import { validPhone } from '/@/utils/validate'
 import { login } from '/@/api/user'
 import toasts from '/@/views/components/toasts'
 import { LoginLayout } from '/@/components/YuLayout'
-
-import logo from '/@/assets/imgs/logo.png'
 import { useRouter, useRoute } from "vue-router"
 import { useStore } from "vuex"
 const store = useStore()
@@ -90,7 +88,6 @@ const rules = {
     { required : true, message : '密码不能为空', trigger },
   ],
 }
-
 
 const onSubmit = async(values) => {
   try {
