@@ -1,18 +1,18 @@
 import { createApp } from 'vue'
-import 'normalize.css/normalize.css'
-import '/@/assets/iconfont/iconfont.css'
+import App from './App.vue'
+import router from "./router"
+import store from "./store"
 
 import Vant from 'vant'
 import 'lib-flexible/flexible'
 import 'vant/lib/index.css'
 
+import 'normalize.css/normalize.css'
+import '/@/assets/iconfont/iconfont.css'
+
 import './styles/index.scss'
 import "./assets/iconfont/iconfont.js"
 import "./assets/iconfont/iconfont.css"
-
-import App from './App.vue'
-import router from "./router"
-import store from "./store"
 
 import './permission'
 import "./utils/rem"
