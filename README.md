@@ -15,13 +15,27 @@ Vite Vant Template 是一个免费开源的移动端模版。使用了最新的`
 - [github](https://github.com/mvpyb/vite-vant-template) - 完整版github站点
 - [码云](https://gitee.com/simmon_page/vite-vant-template) - 完整版码云站点
 
-## Vite Element Admin （vite + element plus 中后台模板）
+## 其他项目
 
-- [没有梯子的可移步码云](http://simmon_page.gitee.io/vite-element-plus-admin/) - 完整版预览 （ gitee ）
-- [vite-element-admin](https://mvpyb.github.io/vite-element-plus-admin/dist/) - 完整版预览 ( github )
-- [github](https://github.com/mvpyb/vite-element-plus-admin) - 完整版github站点
-- [码云](https://gitee.com/simmon_page/vite-element-plus-admin) - 完整版码云站点
+- JavaScript 版: [Vite-Element-Admin（Github）](https://github.com/mvpyb/vite-element-admin) 
+- JavaScript 版: [Vite-Element-Admin（Gitee）](https://gitee.com/simmon_page/vite-element-admin-ts) 
 
+---
+
+- Typescript 版: [Vite-Element-Admin-ts（Github）](https://github.com/mvpyb/vite-element-admin-ts)
+- Typescript 版: [Vite-Element-Admin-ts（Gitee）](https://github.com/mvpyb/vite-element-admin-ts)
+
+---
+
+- React 版: [React-Ant-Admin（Github）](https://github.com/mvpyb/react-ant-admin)
+- React 版: [React-Ant-Admin（Gitee）](https://gitee.com/simmon_page/react-antd-admin)
+
+---
+
+- Nuxt Template: [Nuxt-Simple-Template（Github）](https://github.com/mvpyb/nuxt-simple-template) - 等3.x稳定了之后会同步增加3.x版本
+- Nuxt Template: [Nuxt-Simple-Template（Gitee）](https://gitee.com/simmon_page/nuxt-simple-template)
+
+---
 
 测试账号: 随便填
 测试密码: 随便填
