@@ -1,11 +1,9 @@
-
-const settings = {
-  title : 'vite-vant-template',
+const defaultSetting = {
+  title : 'Vite Element Admin',
   showSettings : true,
   tagsView : true,
-  fixedHeader : false,
-  sidebarLogo : true,
-  errorLog : 'production'
+  fixedHeader : true,
+  sidebarLogo : true
 }
 
-export default settings
+export default defaultSetting

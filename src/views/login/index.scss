@@ -1,11 +1,10 @@
-
-
 .body-container {
-  
   .van-cell-group {
-    .van-cell:after{}
+    .van-cell:after {
+    }
     .van-cell__value {
-      .van-field__body, .van-field__control {
+      .van-field__body,
+      .van-field__control {
         height: 36px;
         line-height: 36px;
       }
@@ -17,10 +16,10 @@
       display: block;
       width: 80%;
       margin: 0 auto;
-      border : none;
+      border: none;
       height: 48px;
       line-height: 48px;
-      background: var( --yu-linear-bg-color );
+      background: var(--yu-linear-bg-color);
     }
   }
 }

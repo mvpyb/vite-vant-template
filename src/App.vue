@@ -1,11 +1,26 @@
 <template>
-  <div id="app">
+  <!--  <p class="test">{{ $t('header.home') }}</p>-->
+  <van-config-provider :theme="theme">
     <router-view />
-  </div>
+  </van-config-provider>
 </template>
 
 <script>
-  export default {
-    name: 'App'
+import { defineComponent, ref } from 'vue'
+import { ConfigProvider } from 'vant'
+// import { useI18n } from 'vue-i18n'
+// import { useAppStore } from '@/store'
+
+export default defineComponent( {
+  name : 'App',
+  components : {
+    [ConfigProvider.name] : ConfigProvider
+  },
+  setup() {
+    const theme = ref( 'light' )
+    return {
+      theme
+    }
   }
+} )
 </script>

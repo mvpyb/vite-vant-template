@@ -1,4 +1,3 @@
-
 /* 组件动画*/
 /* slow */
 .fade-slow-enter-active {
@@ -77,22 +76,4 @@
 .fade-top-leave-to {
   opacity: 0;
   transform: translateY(-8%);
-}
-
-
-/* breadcrumb transition */
-.breadcrumb-enter-active,
-.breadcrumb-leave-active {
-  transition: all .5s;
-}
-.breadcrumb-enter,
-.breadcrumb-leave-active {
-  opacity: 0;
-  transform: translateX(20px);
-}
-.breadcrumb-move {
-  transition: all .5s;
-}
-.breadcrumb-leave-active {
-  position: absolute;
 }

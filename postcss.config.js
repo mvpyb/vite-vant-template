@@ -1,8 +1,6 @@
-
-// https://github.com/cuth/postcss-pxtorem#readme
 module.exports = {
-  "plugins": {
-    'autoprefixer': {
+  plugins: {
+    autoprefixer: {
       overrideBrowserslist: [
         "Android 4.1",
         "iOS 7.1",
@@ -14,13 +12,17 @@ module.exports = {
       grid: true
     },
     "postcss-pxtorem": {
-      // rootValue: 37.5, // Vant 官方根字体大小是 37.5, 结果为：设计稿元素尺寸/37.5，比如元素宽375px,最终页面会换算成 10rem
       rootValue({ file }) {
         return file.indexOf('vant') !== -1 ? 37.5 : 32;
-      }, // 设计稿的尺寸为320
-      
+      },
+
       propList: ['*','!letter-spacing'],
       selectorBlackList: ['.norem'] // 过滤掉.norem-开头的class，不进行rem转换
     }
-  }
+  },
+  // plugins: [
+  //   require('tailwindcss'),
+  //   require('autoprefixer'),
+  //   require('postcss-import')
+  // ]
 }

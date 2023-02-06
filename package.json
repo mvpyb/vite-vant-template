@@ -1,51 +1,105 @@
 {
-  "name": "my-vue-app",
-  "version": "0.0.0",
+  "name": "vite-vant-template",
+  "private": true,
+  "version": "3.0.0",
+  "description": "vite-element-admin",
   "scripts": {
     "dev": "cross-env --max_old_space_size=4096 vite",
-    "build:pro": "cross-env vite build --mode production",
-    "build": "vuedx-typecheck . && vite build",
-    "serve": "vite preview"
+    "build": "rimraf dist && cross-env vite build",
+    "build:staging": "rimraf dist && cross-env vite build --mode staging",
+    "report": "rimraf dist && cross-env vite build",
+    "vis": "set vis=true && vite build",
+    "lint-fix": "eslint --fix --ext .js,.ts,.jsx,.tsx,.vue src",
+    "lint-prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
+    "lint": "npm run lint-prettier && npm run lint-fix",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "author": {
+    "name": "灰是小灰灰的灰",
+    "email": "454539387@qq.com",
+    "url": ""
   },
   "dependencies": {
-    "await-to-js": "^3.0.0",
-    "axios": "^0.21.1",
-    "dotenv": "^8.2.0",
-    "js-cookie": "2.2.0",
-    "lib-flexible": "^0.3.2",
+    "@vueuse/core": "^9.6.0",
+    "autoprefixer": "^10.4.13",
+    "axios": "^1.2.0",
+    "clipboard": "^2.0.11",
+    "js-cookie": "^3.0.1",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "lodash-unified": "^1.0.3",
+    "mitt": "^3.0.0",
     "mockjs": "^1.1.0",
-    "normalize.css": "7.0.0",
     "nprogress": "^0.2.0",
     "path": "^0.12.7",
-    "path-to-regexp": "^6.2.0",
-    "swiper": "^7.0.7",
-    "vant": "^3.2.2",
-    "vite-plugin-svg-icons": "^1.0.4",
-    "vue": "^3.2.19",
-    "vue-router": "^4.0.11",
-    "vuex": "^4.0.2"
+    "path-browserify": "^1.0.1",
+    "pinia": "^2.0.27",
+    "qs": "^6.11.0",
+    "swiper": "^9.0.2",
+    "tailwindcss": "^3.2.4",
+    "unplugin-vue-define-options": "^1.2.0",
+    "vant": "^4.0.10",
+    "vue": "^3.2.45",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@types/node": "^14.14.31",
-    "@vitejs/plugin-vue": "^1.1.4",
-    "@vuedx/typecheck": "^0.6.0",
-    "@vuedx/typescript-plugin-vue": "^0.6.0",
-    "babel-plugin-import": "^1.13.3",
-    "less": "^4.1.1",
-    "postcss-pxtorem": "^5.1.1",
-    "sass": "^1.32.8",
-    "autoprefixer": "^10.2.4",
-    "@vue/compiler-sfc": "^3.1.1",
-    "@types/mockjs": "^1.0.3",
-    "@vitejs/plugin-vue-jsx": "^1.1.5",
+    "@babel/core": "^7.20.5",
+    "@babel/eslint-parser": "^7.19.1",
+    "@vitejs/plugin-legacy": "^4.0.1",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
     "cross-env": "^7.0.3",
-    "husky": "^6.0.0",
-    "postcss": "^8.2.6",
-    "postcss-import": "^14.0.0",
-    "process-nextick-args": "^2.0.1",
-    "typescript": "^4.2.4",
-    "vite": "^2.3.8",
-    "vite-plugin-mock": "^2.8.0",
-    "vite-plugin-style-import": "^1.0.0"
+    "eslint": "^8.28.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-vue": "^9.8.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
+    "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
+    "postcss-pxtorem": "^6.0.0",
+    "prettier": "^2.8.0",
+    "rimraf": "^4.1.2",
+    "rollup-plugin-visualizer": "^5.8.3",
+    "sass": "^1.56.1",
+    "svg-sprite-loader": "^6.0.11",
+    "vite": "^4.1.1",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-mock": "^2.9.6",
+    "vue-eslint-parser": "^9.1.0"
+  },
+  "homepage": "https://github.com/mvpyb/vite-element-admin",
+  "keywords": [
+    "vite element admin",
+    "vite",
+    "vue3",
+    "element-plus",
+    "admin"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "src/**/*.{vue,js,ts,tsx,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "not ie 11",
+    "not op_mini all"
+  ],
+  "engines": {
+    "node": ">= 16.17.0"
   }
 }

@@ -1,93 +1,238 @@
-
-
-body, dd, dl, figure, form, h1, h2, h3, h4, h5, h6, ol, p, pre, ul {
-  margin: 0
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+p,
+form,
+figure,
+dl,
+dd {
+  margin: 0;
 }
-
-
-:after, :before {
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-ol, ul {
+ul,
+ol {
+  margin: 0;
   padding: 0;
-  list-style: none
+  list-style: none;
 }
-
 main {
-  display: block
+  display: block;
 }
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
-  font-weight: 400
+  font-weight: normal;
 }
-
 a {
   text-decoration: none;
-  color: #333
+  color: #333;
 }
-
 img {
-  vertical-align: top
+  vertical-align: top;
+  border: none;
 }
-
-button, input, select, textarea {
+input,
+button,
+select,
+textarea {
   vertical-align: middle;
-  outline: 0;
+  outline: none;
+  border: none;
   padding: 0;
   margin: 0;
-  border: 1px solid #a1a1a1
 }
-
-button, img, select, textarea {
-  border: 0
+input {
+  border: 1px solid #a1a1a1;
 }
-
 textarea {
   resize: none;
-  overflow: auto
+  overflow: auto;
+}
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+.clearFix,
+.clearfix {
+  zoom: 1;
+}
+.clearFix:after,
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+i {
+  font-style: normal;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.p12 {
+  padding: 12px;
+}
+
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.inlineBlock {
+  display: block;
 }
 
 .clearFix {
-  zoom: 1
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+  }
 }
 
-.clearFix:after {
-  content: "";
-  display: block;
-  clear: both
+// 横向
+.flex-row {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+// 纵向
+.flex-column {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+// 两侧排列
+.flex-between {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+// 水平居中
+.flex-level-center {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+// 垂直居中
+.flex-vertical-center {
+  align-items: center;
+  -webkit-align-items: center;
 }
 
-i {
-  font-style: normal
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ellipsis-col {
+  overflow: hidden;
+  text-align: justify;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.ellipsis-col2 {
+  -webkit-line-clamp: 2;
+}
+
+.un-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*ICONFONT*/
+[class*='yu-icon-'],
+[class^='yu-icon-'] {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
 }
 
 body {
-  font-size: 12px;
-  font-family: 'PingFang', 'PingFangMedium', "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
-  background: #fff
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
 }
 
-body, html {
-  width: 100%;
-  height: 100%
+label {
+  font-weight: 700;
 }
 
-a:focus,
-a:active {
-  outline: none;
+html {
+  height: 100%;
+  box-sizing: border-box;
 }
 
-a,
-a:focus,
-a:hover {
-  cursor: pointer;
-  color: inherit;
-  text-decoration: none;
+#app {
+  height: 100%;
 }
 
-div:focus {
-  outline: none;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.padding-content {
+  padding: 4px 0;
 }

@@ -7,6 +7,5 @@
 </template>
 
 <script setup>
-  import { AppMain, FootBar, NormalNavBar } from "./components"
-  
+import { AppMain, FootBar, NormalNavBar } from './components'
 </script>

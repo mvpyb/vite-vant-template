@@ -1,0 +1,15 @@
+build/*.js
+src/assets
+node_modules
+public
+dist
+src/vendor/**/*.js
+src/utils/cropper.js
+src/utils/image-compressor.js
+
+# src/**/*
+
+
+
+
+

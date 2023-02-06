@@ -1,10 +1,27 @@
-
-import http from '/@/utils/request'
+import http from '@/utils/request'
 
 export function login( data ) {
   return http.request( {
-    method: 'get',
+    method : 'get',
     url : '/login',
+    data
+  } )
+}
+
+export function logout() {
+  return http.request( {
+    url : '/logout',
+    method : 'get'
+  } )
+}
+
+// *-------------------------------------------
+
+// 用户列表
+export function UserList( data ) {
+  return http.request( {
+    method : 'post',
+    url : '/v1/user/list',
     data
   } )
 }
@@ -17,17 +34,16 @@ export function getInfo( data ) {
   } )
 }
 
-export function logout() {
+export function loginHistory() {
   return http.request( {
-    url: '/logout',
-    method: 'get'
-  })
+    url : '/login/history',
+    method : 'get'
+  } )
 }
-
 
 export function testRequest() {
   return http.request( {
-    url: '/test',
-    method: 'get'
-  })
+    url : '/test',
+    method : 'get'
+  } )
 }

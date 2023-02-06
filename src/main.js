@@ -1,37 +1,41 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from "./router"
-import store from "./store"
-
-import Vant from 'vant'
-import 'lib-flexible/flexible'
+import router from './router'
+import { registerStore } from '@/store'
+import { useSvgIcon } from './icons'
+import './permission'
+import './utils/rem'
+import { setupVant } from '@/plugins/setupVant'
 import 'vant/lib/index.css'
 
-import 'normalize.css/normalize.css'
-import '/@/assets/iconfont/iconfont.css'
-
+// 导入公共样式
 import './styles/index.scss'
-import "./assets/iconfont/iconfont.js"
-import "./assets/iconfont/iconfont.css"
+// 第三方自定义字体文件
+import './assets/fonts/index.css'
 
-import './permission'
-import "./utils/rem"
+// 导入字体图标
+import './assets/iconfont/iconfont.css'
+// 全局事件总成
+import globalEmitter from '@/utils/mitt'
+// 自定义指令
+import registerDirective from '@/directive'
+// 国际化
+import { setupI18n } from '@/locale'
 
-// import swiper from '/@/plugins/swiper'
-// import 'swiper/swiper.scss'
+const app = createApp( App )
 
-const app = createApp(App)
-
-import { useSvgIcon } from "./icons"
-useSvgIcon( app )
-
-const getServerConfig = async() => {
-  app
-      .use(router)
-      .use(store)
-      .use(Vant)
-      // .use(swiper)
+const initApp = async() => {
+  app.use( router )
+  useSvgIcon( app )
+  registerStore( app )
+  registerDirective( app )
   await router.isReady()
-  app.mount('#root', false)
+
+  setupI18n( app )
+  setupVant( app )
+
+  app.use( globalEmitter )
+  // app.use( ElementPlus )
+  app.mount( '#app' )
 }
-getServerConfig()
+initApp()
